@@ -26,7 +26,7 @@ Rails.application.routes.draw do
 end
 ```
 
-+ mail:
++ mail settings:
 ```ruby
 # environments/development.rb
 config.action_mailer.delivery_method =:smtp
