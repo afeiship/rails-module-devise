@@ -54,4 +54,14 @@ Rails.application.configure do
 
   ## for devise
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  config.action_mailer.delivery_method =:smtp
+  config.action_mailer.smtp_settings = {
+      :address=> "smtp.163.com",
+      :port=> 25,
+      :domain=> "163.com",
+      :authentication=> :login,
+      :user_name=> "admin@163.com",#你的邮箱
+      :password=> 'admin'      #你的密码
+  }
 end
