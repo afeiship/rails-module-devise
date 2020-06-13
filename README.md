@@ -1,7 +1,7 @@
 # rails-module-devise
 > Rails module for devise.
 
-## Step by step:
+## steps
 + some code:
 ```bash
 # add this to Gemfile: `gem 'devise'`
@@ -43,5 +43,10 @@ config.action_mailer.smtp_settings = {
 config.mailer_sender = 'admin@163.com'
 ```
 
-## resources:
-+ https://github.com/plataformatec/devise
+## resources
+- https://github.com/plataformatec/devise
+- https://github.com/imhta/rails_6_devise_example
+- https://github.com/pludoni/simple-captcha
+- https://segmentfault.com/a/1190000014610228
+- http://www.imagemagick.org/script/download.php#macosx
+- https://stackoverflow.com/questions/7195866/how-to-integrate-a-simple-captcha-with-devise-at-registration-in-rails-3
