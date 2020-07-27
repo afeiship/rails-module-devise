@@ -50,3 +50,7 @@ config.mailer_sender = 'admin@163.com'
 - https://segmentfault.com/a/1190000014610228
 - http://www.imagemagick.org/script/download.php#macosx
 - https://stackoverflow.com/questions/7195866/how-to-integrate-a-simple-captcha-with-devise-at-registration-in-rails-3
+- https://www.bogotobogo.com/RubyOnRails/RubyOnRails_Devise_Authentication_Sending_Confirmation_Email.php
+- https://www.sitepoint.com/devise-authentication-in-depth/
+- https://www.jianshu.com/p/d59e4c6e53de
+- https://ihower.tw/rails/auth.html
