@@ -6,6 +6,8 @@
 - https://www.itdaan.com/blog/2016/08/09/bdea499a867bb990e5947c586dd494c6.html
 - https://blog.csdn.net/qwbtc/article/details/52165962
 - http://kiskolabs.github.io/humanizer/
+- https://github.com/heartcombo/devise/wiki/How-To:-Use-Recaptcha-with-Devise
+- https://github.com/heartcombo/devise/issues/2106
 
 
 ## steps
