@@ -12,7 +12,7 @@
   </div>
 
   <div class="field">
-    <%= f.simple_captcha :label => "Enter numbers.." %>
+    <%= show_simple_captcha(:label => "human authentication") %>
   </div>
 
   <% if devise_mapping.rememberable? %>
