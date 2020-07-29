@@ -55,4 +55,5 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # customize
 gem "devise"
+gem 'devise-i18n'
 gem "simple_captcha2", require: "simple_captcha"
