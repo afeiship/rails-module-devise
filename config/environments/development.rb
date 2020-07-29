@@ -63,14 +63,15 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: "localhost", port: 3000 }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    :address => "smtp.163.com",
-    :port => 25,
-    :domain => "163.com",
-    :authentication => :login,
-    :user_name => "afeiship@163.com", #你的邮箱
-    :password => ENV["PASSWORD_001"],      #你的密码
+      address:              'smtp.exmail.qq.com',
+      port:                 465,
+      ssl:                  true,
+      user_name:            'service@52doc.com',
+      password:             ENV["PASSWORD_001"],
+      authentication:       'plain',
+      enable_starttls_auto: true,
   }
 
   # project/config/initializers/devise.rb
-  config.mailer_sender = "afeiship@163.com"
+  config.mailer_sender = "service@52doc.com"
 end

@@ -1,5 +1,6 @@
 # add column 
 - https://ihower.tw/rails/auth.html
+- https://www.jianshu.com/p/93cb9d8c5e36
 
 ## steps
 1. add migrate
