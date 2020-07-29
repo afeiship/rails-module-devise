@@ -12,7 +12,7 @@
 
 ## steps
 1. add gem
-    ```rb
+    ```ruby
     gem "simple_captcha2", require: "simple_captcha"
     ```
 2. 添加到 form 中去。
@@ -28,7 +28,7 @@
 
 3.  复写 controller 
 
-```rb
+```ruby
 class SessionsController < Devise::SessionsController
   include SimpleCaptcha::ControllerHelpers
   # prepend_before_action :require_no_authentication, :only => [:create]
@@ -47,10 +47,53 @@ end
 ```
 
 4. routes 也对应改到这个上面来：
-```rb
+```ruby
 # 原来的
 devise_for :users
 
 # 新的：
 devise_for :users, :controllers => { :sessions => "sessions" }
+```
+
+## i18n
+- https://github.com/pludoni/simple-captcha/tree/v0.2.2
+```yaml
+en:
+  simple_captcha:
+    placeholder: "Enter the image value"
+    label: "Enter the code in the box:"
+    message:
+      default: "Secret Code did not match with the Image"
+      user: "The secret Image and code were different"
+```
+
+
+## settings
+- https://github.com/pludoni/simple-captcha/tree/v0.2.2
+
+```ruby
+SimpleCaptcha.setup do |sc|
+  # default: 100x28
+  sc.image_size = '120x40'
+
+  # default: 5
+  sc.length = 6
+
+  # default: simply_blue
+  # possible values:
+  # 'embosed_silver',
+  # 'simply_red',
+  # 'simply_green',
+  # 'simply_blue',
+  # 'distorted_black',
+  # 'all_black',
+  # 'charcoal_grey',
+  # 'almost_invisible'
+  # 'random'
+  sc.image_style = 'simply_green'
+
+  # default: low
+  # possible values: 'low', 'medium', 'high', 'random'
+  sc.distortion = 'medium'
+end
 ```
