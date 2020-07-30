@@ -1,6 +1,6 @@
 
 
-# SimpleCaptcha.always_pass = Rails.env.development?
+SimpleCaptcha.always_pass = Rails.env.development?
 
 
 SimpleCaptcha.setup do |sc|
