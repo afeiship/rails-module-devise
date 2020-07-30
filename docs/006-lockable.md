@@ -1,6 +1,7 @@
 # lockable
 - https://www.rubydoc.info/github/plataformatec/devise/Devise/Models/Lockable
 - https://github.com/plataformatec/devise/wiki/How-To:-Add-:lockable-to-Users
+- https://stackoverflow.com/questions/32444342/devise-flash-message-being-notice
 
 ## steps
 1. 添加 `flash` 到 `layout` 中去
