@@ -35,3 +35,7 @@ user.vip?
 - code: role_code(user/vip/admin)
 - name: role_name(普通用户/月卡用户/管理员)
 - description:(普通的互联网用户/月卡用户/超级管理员)
+
+
+## enums
+- https://naturaily.com/blog/ruby-on-rails-enum

@@ -4,9 +4,16 @@ class User < ApplicationRecord
   enum role: [:user, :vip, :admin]
   after_initialize :set_default_role, :if => :new_record?
 
-  devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable, :confirmable, :lockable,
-         :omniauthable, :omniauth_providers => [:qq_connect]
+  devise :database_authenticatable,
+         :registerable,
+         :trackable,
+         :recoverable,
+         :rememberable,
+         :validatable,
+         :confirmable,
+         :lockable,
+         :omniauthable,
+         :omniauth_providers => [:qq_connect]
 
 
   def set_default_role

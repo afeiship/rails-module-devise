@@ -315,5 +315,5 @@ Devise.setup do |config|
 
   #https://graph.qq.com/oauth2.0/show?which=error&display=pc&error=100001&client_id=app_key&redirect_uri=http://moban.work/users/auth/qq_connect/callback&response_type=code&state=c52bd9a4488e4756e30a616ebf8f6f94f05eb23c8b1d3fa3
   # config.omniauth :qq_connect, 'app_id', '101895854'
-  config.omniauth :qq_connect, '101895854'
+  config.omniauth :qq_connect, '101895854', 'cbbd095647d734c2fd46b88480459af2'
 end
