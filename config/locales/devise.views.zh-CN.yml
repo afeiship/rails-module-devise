@@ -100,7 +100,8 @@ zh-CN:
         update: 更新
         we_need_your_current_password_to_confirm_your_changes: 我们需要您的当前密码以确认更改
       new:
-        sign_up: 注册
+        sign_up_info: 注册信息补充
+        sign_up: 注册提交
       signed_up: 欢迎您！您已注册成功。
       signed_up_but_inactive: 您的帐户还未被激活。激活前无法登录。
       signed_up_but_locked: 您已成功注册，但帐号被锁定了，因此无法登录。
@@ -140,3 +141,7 @@ zh-CN:
       not_saved:
         one: 发生 1 个错误，导致%{resource}保存失败：
         other: 发生 %{count} 个错误，导致%{resource}保存失败：
+
+  simple_captcha:
+    placeholder: 请输入6位验证码
+    label: 点击刷新

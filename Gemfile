@@ -57,3 +57,5 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "devise"
 gem 'devise-i18n'
 gem "simple_captcha2", require: "simple_captcha"
+gem 'omniauth'
+gem 'omniauth-oauth2'

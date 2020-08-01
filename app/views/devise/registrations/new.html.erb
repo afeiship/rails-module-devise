@@ -1,4 +1,11 @@
-<h2><%= t('.sign_up') %></h2>
+<h2><%= t('.sign_up_info') %></h2>
+
+<%= session["devise.user_attributes"].inspect %>
+<% if session["devise.user_attributes"] %>
+  <p>Has qq connect</p>
+<% else %>
+  <p>No step1 qq connect</p>
+<% end %>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>

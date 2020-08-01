@@ -15,3 +15,14 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+
+// window.addEventListener('load',()=>{
+//   var elQQ = document.getElementById('login-btn');
+//   elQQ.addEventListener('click', ()=>{
+//     QC.Login.showPopup({
+//       appId:"101895854",
+//       redirectURI:"http://moban.work/users/auth/qq_connect/callback"
+//     });
+//   });
+// })

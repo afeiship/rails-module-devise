@@ -3,9 +3,8 @@ class SessionsController < Devise::SessionsController
   # prepend_before_action :require_no_authentication, :only => [:create]
 
   def create
-    puts params
     if simple_captcha_valid?
-      puts "valided??"
+      puts session["devise.user_attributes"]
       super
     else
       flash[:alert] = "Captcha code is wrong, try again."

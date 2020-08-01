@@ -308,4 +308,12 @@ Devise.setup do |config|
   # When set to false, does not sign a user in automatically after their password is
   # changed. Defaults to true, so a user is signed in automatically after changing a password.
   # config.sign_in_after_change_password = true
+
+
+  # QQ Connect
+  require 'omniauth/strategies/qq_connect'
+
+  #https://graph.qq.com/oauth2.0/show?which=error&display=pc&error=100001&client_id=app_key&redirect_uri=http://moban.work/users/auth/qq_connect/callback&response_type=code&state=c52bd9a4488e4756e30a616ebf8f6f94f05eb23c8b1d3fa3
+  # config.omniauth :qq_connect, 'app_id', '101895854'
+  config.omniauth :qq_connect, '101895854'
 end
